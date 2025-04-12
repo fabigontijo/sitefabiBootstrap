@@ -1,3 +1,33 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+Poppins
+font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+
+Raleway
+font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+Roboto
+font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+ 
+*/
+
+:root {
+--font-padrao: "Roboto", sans-serif;
+--font-titulo: "Raleway", sans-serif;
+--font-nav: "Poppins", sans-serif;
+}
+
 /* Cores para todo o site 
 
 Global Color */
@@ -30,7 +60,17 @@ Global Color */
 body {
   color: var(--default-color);
   background-color: var(--background-color);
+  font-family: var(--font-padrao);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-titulo);
+ }
 
 a {
   color: var(--accent-color);
@@ -73,9 +113,12 @@ a:hover {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  --background-collor:rgba(0,0,0,0.85);
 }
 
 
+
+ 
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
   .navmenu {
@@ -489,4 +532,73 @@ section,
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+
+/* Sobre */
+
+.about .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.about .content ul i {
+  flex-shrink: 0;
+  font-size: 48px;
+  color: var(--accent-color);
+  margin-right: 20px;
+  line-height: 0;
+}
+
+.about .content ul h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.about .content ul p {
+  font-size: 15px;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Play video  */
+
+.pulsating-play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  display: block;
+  position: relative;
+  overflow: ;
+  border-radius: 50%;
+}
+
+.pulsating-play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsating-play-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid color-mix(in srgb, var(--accent-color),transparent 30%);
+  background: rgba(198, 16, 0, 0);
+  top: -15%;
+  left: -15%;
 }
