@@ -44,7 +44,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
             <!-- logo -->
-            <a href="#home" class="logo d-flex align-items-center">
+            <a href="#hero" class="logo d-flex align-items-center">
 
                 <h1 class="sitename"> Agency </h1>
 
@@ -55,7 +55,7 @@
 
                 <ul>
                     <li>
-                        <a href="#home" class="active">Home</a>
+                        <a href="#hero" class="active">Home</a>
                     </li>
                     <li>
                         <a href="#about"> Sobre </a>
@@ -463,19 +463,44 @@
         </section>
 
         <!-- Parallax action WhatsApp -->
-        <section id="call-to-action" class="call-to-action
-        section dark-background">
+        <section id="call-to-action" class="call-to-action section dark-background">
 
-            <img src="img/cta-bg.jpg">
-        <div class="container">
+           <img src="img/cta-bg.jpg"> 
 
-        </div>
+            <div class="container">
+
+                <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+
+                    <div class="col-xl-10">
+
+                        <div class="text-center">
+
+                            <h3> Entre em Contato </h3>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+                            <a href="http://wa.me/+55119" class="cta-btn" target="_blank">
+                                <i class="bi bi-whatsapp"> </i>
+                                WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
         </section>
 
         <!-- Portfolio -->
         <section id="portfolio" class="portfolio">
             <div class="container section-title">
                 <h2>Portfolio</h2>
+
                 <div>
                     <span>
                         Confira Nosso
@@ -485,66 +510,234 @@
                     </span>
                 </div>
             </div>
-            
+
             <div class="container-fluid">
 
                 <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                    
-                    <ul class="portfolio-filters isotope-filters">
+
+                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up">
                         <li data-filter="*" class="filter-active">Todos</li>
 
                         <li data-filter=".filter-app">APP</li>
-                        <li data-filter=".filter-product">Produto</li>
+                        <li data-filter=".filter-product">Produtos</li>
                         <li data-filter=".filter-branding">Marca</li>
                         <li data-filter=".filter-books">Livros</li>
-
                     </ul>
 
                     <div class="row g-0 isotope-container">
 
                         <!-- Foto 1 -->
                         <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            
                             <div class="portfolio-content h-100">
-                               
-                                <img src="img/portfolio/app-1.jpg" alt="" class="img-fluid">
-                                
+                                <img src="img/portfolio/app-1.jpg" alt="" class="img-fluid" data-aos="zoom-out">
                                 <div class="portfolio-info">
-
-                                    <a href="img/portfolio/app-1.jpg" data-gallery="portfolio-galery-app" class="glightbox preview-link">
-
-                                        <i class="bi bi-zoom-in">
-
-                                        </i>
-
+                                    <a href="img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
                                     </a>
-                                    <a href="" title="Mais Informaçoes" class="details-link">
-
-                                        <i class="bi bi-link-45deg">
-
-                                        </i>
-
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
                                     </a>
-                    
-
-
                                 </div>
-
-
                             </div>
                         </article>
 
+                        <!-- Foto 2 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/books-1.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-books"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 3 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/branding-1.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-branding"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 4 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/product-2.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-product"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 5 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/product-1.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-product"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 6 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/branding-2.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-branding"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 7 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/books-2.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-books"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 8 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/app-2.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 9 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/branding-3.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-branding"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 10 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/product-3.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-product"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 11 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/app-3.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Foto 12 -->
+                        <article class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+                            <div class="portfolio-content h-100">
+                                <img src="img/portfolio/books-3.jpg" alt="" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <a href="img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-books"
+                                        class="glightbox preview-link">
+                                        <i class="bi bi-zoom-in"></i>
+                                    </a>
+                                    <a href="" title="Mais Informações" class="details-link">
+                                        <i class="bi bi-link-45deg"> </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+
+
+
                     </div>
 
+
                 </div>
- 
+
+
             </div>
+
+
+
         </section>
 
         <!-- Feedbacks -->
-        <section id="testimonials" class="testimonials">
-            <div class="container section-title">
-                <h2>Avaliações</h2>
+        <section id="feedbacks" class="feedbacks">
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Depoimentos</h2>
+
                 <div>
                     <span>
                         Confira Nossos
@@ -553,6 +746,38 @@
                         Depoimentos
                     </span>
                 </div>
+            </div class="container">
+
+                <div class="row gy-4">
+
+                    <!-- Feedback 1--> 
+                    <article class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+                        <div class="feedback-item">
+
+                            <img src="img/testimonials/testimonials-1.jpg" alt="" class="feedback-img">
+
+                            <h3> Saul Godman </h3>
+                            <h4> Ceo & Founder </h4>
+
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"> </i>
+                                <span> Muito bom, nota 3 </span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            <div>
+
             </div>
         </section>
 
@@ -560,6 +785,7 @@
         <section id="team" class="team">
             <div class="container section-title">
                 <h2>Equipe</h2>
+
                 <div>
                     <span>
                         Conheça Nosso
@@ -575,6 +801,7 @@
         <section id="contact" class="contact">
             <div class="container section-title">
                 <h2>Contato</h2>
+
                 <div>
                     <span>
                         Precisa de Ajuda?
