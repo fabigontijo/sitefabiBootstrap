@@ -828,7 +828,7 @@ section,
 .call-to-action h3 {
   font-weight: 800;
   text-shadow: 2px 0px 3px #262626;
-  font-size: 30px; 
+  font-size: 30px;
 }
 
 .call-to-action p {
@@ -854,6 +854,7 @@ section,
   background: #075e54;
   border: 2px solid #075e54;
 }
+
 
 
 /* --------------------- 
@@ -938,12 +939,12 @@ section,
 }
 
 
-
-/*------------------------# Feedbacks-------*/
-
+/* ---------------------
+# Feedbacks 
+----------------------*/
 .feedbacks .feedback-item {
-  background-color: #fafafa;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
   padding: 30px;
   position: relative;
   height: 100%;
@@ -955,10 +956,143 @@ section,
   border: 6px solid #fafafa;
   float: left;
   margin: 0 10px 0 0;
+}
 
+.feedbacks .feedback-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.feedbacks .feedback-item h4 {
+  font-size: 14px;
+  color: #26262692;
+  margin: 0;
+}
+
+.feedbacks .feedback-item .stars {
+  margin: 10px 0;
+} 
+
+.feedbacks .feedback-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+  text-shadow: 1px 1px 1px #060606;
+}
+
+.feedbacks .feedback-item i.star-white  {
+  color: #e1e1e1;
+  margin: 0 1px;
+  text-shadow: 1px 1px 1px #060606;
+}
+
+.feedbacks .feedback-item .quote-icon-left, 
+.feedbacks .feedback-item .quote-icon-right {
+  color: #428bca79;
+  font-size: 26px;
+  line-height: 0;
+}
+
+.feedbacks .feedback-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.feedbacks .feedback-item .quote-icon-right {
+  display: inline-block; /* permitir transformação e dimensão */
+  right: -5px; 
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1); /* inverter o elemento horizontal e vertical */
+}
+
+.feedbacks .feedback-item p {
+  /* font-style: italic; */
+  margin: 15px 0 0 0;
+  padding: 0;
 }
 
 
+/* EQUIPE */
+
+
+.team .member {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  transition: all 0.2s ease-in;
+}
+
+.team .member .member-info-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition: bottom 0.4s;
+}
+
+.team .member .member-info-content h4 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-style: 18px;
+}
+
+.team .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: -38px;
+  right: 0;
+  height: 48px;
+  transition: bottom ease-in-out 0,4s;
+  text-align: center;
+}
+
+.team .member .social a {
+  display: inline-block;
+  transition: color 0.3s;
+  color: #ffffff8f;
+  margin: 0 10px;
+}
+
+.team .member .social a:hover {
+  color: #fff;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .member:hover .member-info {
+  opacity: 1;
+  transition: 0.4s;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0) 100%);
+}
+
+.team .member:hover .member-info-content {
+  bottom: 68px;
+  transition: bottom 0.4s;  
+}
+
+.team .member:hover .social {
+  bottom: 0;
+  transition: bottom ease-in-out 0.4s;
+}
 
 /* Sroll-top = Botão de voltar ao topo do Site */
 
