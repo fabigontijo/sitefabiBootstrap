@@ -212,7 +212,6 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 
-
   // Envio do Formulário com Limpeza dos Campos
 
   const form = document.querySelector(".email-form");
@@ -242,5 +241,6 @@
     }
 
   });
+
 
 })();
